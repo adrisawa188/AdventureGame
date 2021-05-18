@@ -25,13 +25,59 @@ namespace AdventureGame
 
         private void option1Button_Click(object sender, EventArgs e)
         {
+            int randomValue;
+            int poisonBerry;           
+            randomValue = randGen.Next(1, 11);
+            poisonBerry = randomValue;
             if (page == 1)
             {
                 page = 2;
             }
-            else if (page == 2) { page = 99; }
+            else if (page == 2) { page = 1; }
+            else if (page == 3) { page = 4; }
+            else if (page == 4) { page = 5; }
+            else if (page == 7) { page = 9; }
+            else if (page == 9) { page = 10; }
+            else if (page == 10) { page = 1; }
+            else if (page == 11) { page = 12; }
+            else if (page == 12) { page = 1; }
+            else if (page == 13) { page = 1; }
+            else if (page == 8) { page = 16; }
+            else if (page == 16) { page = 1; }
+            else if (page == 17) { page = 19; }
+            else if (page == 19) { page = 15; }
+            else if (page == 15) { page = 1; }
+            else if (page == 6) { page = 22; }
+            else if (page == 22) { page = 1; }
+            else if (page == 23) { page = 25; }
+            else if (page == 25) { page = 1; }
+            else if (page == 28) { page = 1; }
+            else if (page == 21) { page = 1; }
+            else if (page == 24) { page = 1; }
+            else if (page == 18) { page = 1; }
+            else if (page == 27) { page = 1; }
+            else if (page == 26) { page = 1; }
+            
+           if (page == 5 && poisonBerry > 7)
+            {
+               page = 26;
+            }
+           else if (page == 5 && poisonBerry < 7)
+            {
+                page = 7;
+            }
+            
+
 
             DisplayPage();
+        }
+        private void option2Button_Click(object sender, EventArgs e)
+        {
+            if (page == 1)
+            {
+                page = 3;
+            }
+         
         }
 
         public void DisplayPage()
@@ -247,5 +293,7 @@ namespace AdventureGame
                     break;
             }           
         }
+
+      
     }
 }

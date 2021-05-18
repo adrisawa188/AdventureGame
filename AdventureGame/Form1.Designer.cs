@@ -59,6 +59,7 @@ namespace AdventureGame
             this.option2Button.Size = new System.Drawing.Size(34, 33);
             this.option2Button.TabIndex = 2;
             this.option2Button.UseVisualStyleBackColor = true;
+            this.option2Button.Click += new System.EventHandler(this.option2Button_Click);
             // 
             // option3Button
             // 
