@@ -89,5 +89,53 @@
   <ItemGroup>
     <None Include="Resources\Oxygen-Icons.org-Oxygen-Actions-arrow-right.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deepBrush.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Forest path.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\465697__breviceps__owl-hoot.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\night forest.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Berries.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bonfire.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\377003__audio-stock__car-passing-by.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\517859__antonio-lai__forest.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\road.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\234288__leosalom__fireplace.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\70333__mrbubble110__bear-roar.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\536331__xhwzq6gv__panther.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wildblueberries.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\70333__mrbubble110__bear-roar %281%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\den.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\416859__tbsounddesigns__beargrowl-03.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

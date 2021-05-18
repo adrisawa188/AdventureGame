@@ -61,11 +61,143 @@ namespace AdventureGame.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream _234288__leosalom__fireplace {
+            get {
+                return ResourceManager.GetStream("_234288__leosalom__fireplace", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream _377003__audio_stock__car_passing_by {
+            get {
+                return ResourceManager.GetStream("_377003__audio_stock__car_passing_by", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream _416859__tbsounddesigns__beargrowl_03 {
+            get {
+                return ResourceManager.GetStream("_416859__tbsounddesigns__beargrowl_03", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream _465697__breviceps__owl_hoot {
+            get {
+                return ResourceManager.GetStream("_465697__breviceps__owl_hoot", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream _517859__antonio_lai__forest {
+            get {
+                return ResourceManager.GetStream("_517859__antonio_lai__forest", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream _536331__xhwzq6gv__panther {
+            get {
+                return ResourceManager.GetStream("_536331__xhwzq6gv__panther", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream _70333__mrbubble110__bear_roar {
+            get {
+                return ResourceManager.GetStream("_70333__mrbubble110__bear_roar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream _70333__mrbubble110__bear_roar__1_ {
+            get {
+                return ResourceManager.GetStream("_70333__mrbubble110__bear_roar__1_", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Berries {
+            get {
+                object obj = ResourceManager.GetObject("Berries", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Bonfire {
+            get {
+                object obj = ResourceManager.GetObject("Bonfire", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap clickBall__1_ {
             get {
                 object obj = ResourceManager.GetObject("clickBall (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap deepBrush {
+            get {
+                object obj = ResourceManager.GetObject("deepBrush", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap den {
+            get {
+                object obj = ResourceManager.GetObject("den", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Forest_path {
+            get {
+                object obj = ResourceManager.GetObject("Forest_path", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap night_forest {
+            get {
+                object obj = ResourceManager.GetObject("night_forest", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -86,6 +218,26 @@ namespace AdventureGame.Properties {
         internal static System.Drawing.Bitmap Oxygen_Icons_org_Oxygen_Actions_go_next {
             get {
                 object obj = ResourceManager.GetObject("Oxygen-Icons.org-Oxygen-Actions-go-next", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap road {
+            get {
+                object obj = ResourceManager.GetObject("road", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap wildblueberries {
+            get {
+                object obj = ResourceManager.GetObject("wildblueberries", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

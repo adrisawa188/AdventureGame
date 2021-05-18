@@ -30,12 +30,12 @@ namespace AdventureGame
         private void InitializeComponent()
         {
             this.outputLabel = new System.Windows.Forms.Label();
-            this.option2Button = new System.Windows.Forms.Button();
-            this.option3Button = new System.Windows.Forms.Button();
             this.option1Label = new System.Windows.Forms.Label();
             this.option2Label = new System.Windows.Forms.Label();
             this.option3Label = new System.Windows.Forms.Label();
             this.imageBox = new System.Windows.Forms.Label();
+            this.option3Button = new System.Windows.Forms.Button();
+            this.option2Button = new System.Windows.Forms.Button();
             this.option1Button = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -48,36 +48,11 @@ namespace AdventureGame
             this.outputLabel.Size = new System.Drawing.Size(651, 104);
             this.outputLabel.TabIndex = 0;
             // 
-            // option2Button
-            // 
-            this.option2Button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.option2Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.option2Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.option2Button.Image = global::AdventureGame.Properties.Resources.Oxygen_Icons_org_Oxygen_Actions_arrow_right;
-            this.option2Button.Location = new System.Drawing.Point(12, 354);
-            this.option2Button.Name = "option2Button";
-            this.option2Button.Size = new System.Drawing.Size(34, 33);
-            this.option2Button.TabIndex = 2;
-            this.option2Button.UseVisualStyleBackColor = true;
-            this.option2Button.Click += new System.EventHandler(this.option2Button_Click);
-            // 
-            // option3Button
-            // 
-            this.option3Button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.option3Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.option3Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.option3Button.Image = global::AdventureGame.Properties.Resources.Oxygen_Icons_org_Oxygen_Actions_arrow_right;
-            this.option3Button.Location = new System.Drawing.Point(12, 393);
-            this.option3Button.Name = "option3Button";
-            this.option3Button.Size = new System.Drawing.Size(34, 33);
-            this.option3Button.TabIndex = 3;
-            this.option3Button.UseVisualStyleBackColor = true;
-            this.option3Button.Click += new System.EventHandler(this.option3Button_Click);
-            // 
             // option1Label
             // 
+            this.option1Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.option1Label.ForeColor = System.Drawing.Color.White;
-            this.option1Label.Location = new System.Drawing.Point(52, 315);
+            this.option1Label.Location = new System.Drawing.Point(52, 414);
             this.option1Label.Name = "option1Label";
             this.option1Label.Size = new System.Drawing.Size(539, 33);
             this.option1Label.TabIndex = 4;
@@ -85,8 +60,9 @@ namespace AdventureGame
             // 
             // option2Label
             // 
+            this.option2Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.option2Label.ForeColor = System.Drawing.Color.White;
-            this.option2Label.Location = new System.Drawing.Point(52, 354);
+            this.option2Label.Location = new System.Drawing.Point(52, 453);
             this.option2Label.Name = "option2Label";
             this.option2Label.Size = new System.Drawing.Size(539, 33);
             this.option2Label.TabIndex = 5;
@@ -94,8 +70,9 @@ namespace AdventureGame
             // 
             // option3Label
             // 
+            this.option3Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.option3Label.ForeColor = System.Drawing.Color.White;
-            this.option3Label.Location = new System.Drawing.Point(52, 393);
+            this.option3Label.Location = new System.Drawing.Point(52, 492);
             this.option3Label.Name = "option3Label";
             this.option3Label.Size = new System.Drawing.Size(539, 33);
             this.option3Label.TabIndex = 6;
@@ -104,10 +81,36 @@ namespace AdventureGame
             // imageBox
             // 
             this.imageBox.ForeColor = System.Drawing.Color.White;
-            this.imageBox.Location = new System.Drawing.Point(12, 113);
+            this.imageBox.Location = new System.Drawing.Point(9, 113);
             this.imageBox.Name = "imageBox";
-            this.imageBox.Size = new System.Drawing.Size(651, 199);
+            this.imageBox.Size = new System.Drawing.Size(651, 298);
             this.imageBox.TabIndex = 7;
+            // 
+            // option3Button
+            // 
+            this.option3Button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.option3Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.option3Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.option3Button.Image = global::AdventureGame.Properties.Resources.Oxygen_Icons_org_Oxygen_Actions_arrow_right;
+            this.option3Button.Location = new System.Drawing.Point(12, 492);
+            this.option3Button.Name = "option3Button";
+            this.option3Button.Size = new System.Drawing.Size(34, 33);
+            this.option3Button.TabIndex = 3;
+            this.option3Button.UseVisualStyleBackColor = true;
+            this.option3Button.Click += new System.EventHandler(this.option3Button_Click);
+            // 
+            // option2Button
+            // 
+            this.option2Button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.option2Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.option2Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.option2Button.Image = global::AdventureGame.Properties.Resources.Oxygen_Icons_org_Oxygen_Actions_arrow_right;
+            this.option2Button.Location = new System.Drawing.Point(12, 453);
+            this.option2Button.Name = "option2Button";
+            this.option2Button.Size = new System.Drawing.Size(34, 33);
+            this.option2Button.TabIndex = 2;
+            this.option2Button.UseVisualStyleBackColor = true;
+            this.option2Button.Click += new System.EventHandler(this.option2Button_Click);
             // 
             // option1Button
             // 
@@ -115,7 +118,7 @@ namespace AdventureGame
             this.option1Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.option1Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.option1Button.Image = global::AdventureGame.Properties.Resources.Oxygen_Icons_org_Oxygen_Actions_arrow_right;
-            this.option1Button.Location = new System.Drawing.Point(12, 315);
+            this.option1Button.Location = new System.Drawing.Point(12, 414);
             this.option1Button.Name = "option1Button";
             this.option1Button.Size = new System.Drawing.Size(34, 33);
             this.option1Button.TabIndex = 1;
@@ -127,7 +130,7 @@ namespace AdventureGame
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(675, 450);
+            this.ClientSize = new System.Drawing.Size(675, 535);
             this.Controls.Add(this.imageBox);
             this.Controls.Add(this.option3Label);
             this.Controls.Add(this.option2Label);
