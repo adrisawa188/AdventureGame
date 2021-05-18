@@ -372,7 +372,7 @@ namespace AdventureGame
                     option2Label.Text = "No";
                     option3Button.Enabled = false;
                     imageBox.Image = Properties.Resources.night_forest;
-                    SoundPlayer player11 = new SoundPlayer(Properties.Resources._416859__tbsounddesigns__beargrowl_03;
+                    SoundPlayer player11 = new SoundPlayer(Properties.Resources._416859__tbsounddesigns__beargrowl_03);
                     player11.Play();
                     break;
                 case 99:
