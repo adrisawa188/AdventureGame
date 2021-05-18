@@ -16,19 +16,18 @@ namespace AdventureGame
     {
         int page = 1;
         Random randGen = new Random();
+        int randomValue;
 
         public Form1()
         {
             InitializeComponent();
+           
             DisplayPage();
         }
 
         private void option1Button_Click(object sender, EventArgs e)
         {
-            int randomValue;
-            int poisonBerry;           
             randomValue = randGen.Next(1, 11);
-            poisonBerry = randomValue;
             if (page == 1)
             {
                 page = 2;
@@ -36,10 +35,21 @@ namespace AdventureGame
             else if (page == 2) { page = 1; }
             else if (page == 3) { page = 4; }
             else if (page == 4) { page = 5; }
+            else if (page == 5)
+            {
+                if (randomValue > 7)
+                {
+                    page = 26;
+                }
+                else
+                {
+                    page = 7;
+                }
+            }
             else if (page == 7) { page = 9; }
             else if (page == 9) { page = 10; }
             else if (page == 10) { page = 1; }
-            else if (page == 11) { page = 12; }
+            else if (page == 11) { page = 13; }
             else if (page == 12) { page = 1; }
             else if (page == 13) { page = 1; }
             else if (page == 8) { page = 16; }
@@ -49,7 +59,7 @@ namespace AdventureGame
             else if (page == 15) { page = 1; }
             else if (page == 6) { page = 22; }
             else if (page == 22) { page = 1; }
-            else if (page == 23) { page = 25; }
+            else if (page == 23) { page = 24; }
             else if (page == 25) { page = 1; }
             else if (page == 28) { page = 1; }
             else if (page == 21) { page = 1; }
@@ -57,15 +67,6 @@ namespace AdventureGame
             else if (page == 18) { page = 1; }
             else if (page == 27) { page = 1; }
             else if (page == 26) { page = 1; }
-            
-           if (page == 5 && poisonBerry > 7)
-            {
-               page = 26;
-            }
-           else if (page == 5 && poisonBerry < 7)
-            {
-                page = 7;
-            }
             
 
 
@@ -77,7 +78,41 @@ namespace AdventureGame
             {
                 page = 3;
             }
-         
+            else if (page == 2) { page = 99; }
+            else if (page == 3) { page = 28; }
+            else if (page == 4) { page = 6; }
+            else if (page == 7) { page = 14; }
+            else if (page == 5) { page = 8; }
+            else if (page == 9) { page = 11; }
+            else if (page == 10) { page = 99; }
+            else if (page == 11) { page = 12; }
+            else if (page == 12) { page = 99; }
+            else if (page == 13) { page = 99; }
+            else if (page == 8) { page = 17; }
+            else if (page == 16) { page = 99; }
+            else if (page == 17) { page = 18; }
+            else if (page == 19) { page = 20; }
+            else if (page == 15) { page = 99; }
+            else if (page == 6) { page = 23; }
+            else if (page == 22) { page = 99; }
+            else if (page == 23) { page = 25; }
+            else if (page == 25) { page = 99; }
+            else if (page == 28) { page = 99; }
+            else if (page == 21) { page = 99; }
+            else if (page == 24) { page = 99; }
+            else if (page == 18) { page = 99; }
+            else if (page == 27) { page = 99; }
+            else if (page == 26) { page = 99; }
+
+            DisplayPage();
+        }
+        private void option3Button_Click(object sender, EventArgs e)
+        {
+            if (page == 4)
+            {
+                page = 21;
+            }
+            DisplayPage();
         }
 
         public void DisplayPage()
@@ -87,8 +122,8 @@ namespace AdventureGame
                 case 1:
                     outputLabel.Text = "You are walking through a forest when you realize it is getting dark.";
 
-                    option1Label.Text = "Do you want to spend the night";
-                    option2Label.Text = "Do you want to go back";
+                    option1Label.Text = "Spend the night";
+                    option2Label.Text = "Try to go back";
                     option3Button.Enabled = false;
                     break;
                 case 2:
@@ -108,10 +143,11 @@ namespace AdventureGame
                 case 4:
                     outputLabel.Text = "When you wake up you realize you are lost";
 
-                    option1Label.Text = "Lookj for food";
-                    option2Label.Text = "Try to find path";
+                    option1Label.Text = "Look for food";
+                    option2Label.Text = "Build fire";
                     option3Button.Enabled = true;
-                    option3Label.Text = "Build fire";
+                    option3Label.Text = "Try to find path";
+                    option3Label.Visible = true;
                     break;
                 case 5:
                     outputLabel.Text = "You come accross some berries, they look familiar and you don't think they are poisonous";
@@ -119,6 +155,7 @@ namespace AdventureGame
                     option1Label.Text = "Eat them";
                     option2Label.Text = "Do not";
                     option3Button.Enabled = false;
+                    option3Label.Visible = false;
                     break;
                 case 6:
                     outputLabel.Text = "You rummage around collecting sticks and manage to start a fire";
@@ -126,6 +163,7 @@ namespace AdventureGame
                     option1Label.Text = "Sit around the fire";
                     option2Label.Text = "Try to find the path";
                     option3Button.Enabled = false;
+                    option3Label.Visible = false;
                     break;
                 case 7:
                     outputLabel.Text = "You feel replenished";
@@ -163,7 +201,7 @@ namespace AdventureGame
                     option3Button.Enabled = false;
                     break;
                 case 12:
-                    outputLabel.Text = "As you start heading back, you step in a hole and break your leg. as you lay there, you here what appears to be a car in the direction you were heading. Unable to move, you lay there and die just short of saftey. Do you want to play again?";
+                    outputLabel.Text = "As you start heading back, you step in a hole and break your leg. As you lay there, you here what appears to be a car in the direction you were heading. Unable to move, you lay there and die just short of saftey. Do you want to play again?";
 
                     option1Label.Text = "Yes";
                     option2Label.Text = "No";
@@ -231,9 +269,10 @@ namespace AdventureGame
                     option1Label.Text = "Yes";
                     option2Label.Text = "No";
                     option3Button.Enabled = false;
+                    option3Label.Visible = false;
                     break;
                 case 22:
-                    outputLabel.Text = " As you sit around the fire contemplating what to do next, you hear footsteps, someone saw the smoke from your fire and came to rescue you. You make it out safely. Do you want to play again.";
+                    outputLabel.Text = "As you sit around the fire contemplating what to do next, you hear footsteps, someone saw the smoke from your fire and came to rescue you. You make it out safely. Do you want to play again.";
 
                     option1Label.Text = "Yes";
                     option2Label.Text = "No";
@@ -275,16 +314,14 @@ namespace AdventureGame
                     option3Button.Enabled = false;
                     break;
                 case 28:
-                    outputLabel.Text = "A you stumble through the darkness, you trip and break your leg. A bear sense your distress and attacks you. You die. Do you want to play again?";
+                    outputLabel.Text = "A you stumble through the darkness, you trip and break your leg. A bear senses your distress and attacks you. You die. Do you want to play again?";
 
                     option1Label.Text = "Yes";
                     option2Label.Text = "No";
                     option3Button.Enabled = false;
                     break;
                 case 99:
-                    outputLabel.Text = "Thank you for playing.";                
-                    break;
-
+                    outputLabel.Text = "Thank you for playing.";                               
                     Refresh();
                     Thread.Sleep(3000);
                     Application.Exit();
@@ -294,6 +331,6 @@ namespace AdventureGame
             }           
         }
 
-      
+     
     }
 }
